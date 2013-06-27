@@ -1,18 +1,5 @@
 import unittest
 
-from pyramid_braintree import string_to_bool
-
-
-class TestHelper(unittest.TestCase):
-    def test_true(self):
-        self.assertTrue(string_to_bool('True'))
-
-    def test_false(self):
-        self.assertFalse(string_to_bool('False'))
-        self.assertFalse(string_to_bool(None))
-        self.assertFalse(string_to_bool('anything_else'))
-
-
 class TestPyramidIntegration(unittest.TestCase):
     def test_add_braintree(self):
         import braintree
