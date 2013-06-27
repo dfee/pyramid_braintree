@@ -1,10 +1,6 @@
 import braintree
 
-
-def string_to_bool(string):
-    """ Returns ``True`` if string is "True", otherwise, returns ``False`` """
-    return string == 'True'
-
+from pyramid.settings import asbool
 
 def includeme(config):
     """ Provide useful configuration to a Pyramid ``Configurator`` instance.
@@ -46,4 +42,4 @@ def includeme(config):
         private_key
     )
 
-    braintree.Configuration.use_unsafe_ssl = string_to_bool(use_unsafe_ssl)
+    braintree.Configuration.use_unsafe_ssl = asbool(use_unsafe_ssl)
