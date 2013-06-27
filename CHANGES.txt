@@ -1,0 +1,5 @@
+0.1 (2013-06-27)
+------------
+
+- Allow for the following Braintree configuration options: ``environment``, 
+  ``merchant_id``, ``public_key``, and ``private_key``
