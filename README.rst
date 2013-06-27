@@ -5,6 +5,9 @@ Braintree initializer for the Pyramid Web Framework. 100% Test Covered.
 
 - The following configuration options are required in your config.ini::
 
+    pyramid.includes =
+        pyramid_braintree
+
     braintree.environment = sandbox
     braintree.merchant_id = MY_MERCHANT_ID
     braintree.public_key = MY_PUBLIC_KEY
