@@ -1,5 +1,11 @@
+0.1.1 (2013-07-02)
+------------------
+
+- Relying on Pyramid's asbool helper for more robust boolean detection.
+
+
 0.1 (2013-06-27)
-------------
+----------------
 
 - Allow for the following Braintree configuration options: ``environment``, 
   ``merchant_id``, ``public_key``, and ``private_key``
